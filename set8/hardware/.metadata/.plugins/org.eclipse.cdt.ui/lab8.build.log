@@ -1,0 +1,25 @@
+19:17:21 **** Incremental Build of configuration Debug for project lab8 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/ECE520/Lab8/dma_sys_wrapper/export/dma_sys_wrapper/sw/dma_sys_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lab8.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/ECE520/Lab8/dma_sys_wrapper/export/dma_sys_wrapper/sw/dma_sys_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab8.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab8.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab8.elf  |tee "lab8.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34596	   2248	  22632	  59476	   e854	lab8.elf
+'Finished building: lab8.elf.size'
+' '
+
+19:17:29 Build Finished (took 7s.313ms)
+
