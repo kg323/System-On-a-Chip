@@ -1,0 +1,311 @@
+
+*** Running vivado
+    with args -log Lab9_design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab9_design_1_wrapper.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source Lab9_design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1407.270 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1407.270 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/ECE520/Lab9/Lab_9_design/Lab_9_design.srcs/utils_1/imports/synth_1/Lab9_design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/ECE520/Lab9/Lab_9_design/Lab_9_design.srcs/utils_1/imports/synth_1/Lab9_design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Lab9_design_1_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 48832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1407.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Lab9_design_1_wrapper' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/hdl/Lab9_design_1_wrapper.vhd:22]
+INFO: [Synth 8-3491] module 'Lab9_design_1' declared at 'c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:14' bound to instance 'Lab9_design_1_i' of component 'Lab9_design_1' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/hdl/Lab9_design_1_wrapper.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'Lab9_design_1' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:26]
+INFO: [Synth 8-3491] module 'Lab9_design_1_c_counter_binary_0_0' declared at 'C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_c_counter_binary_0_0_stub.vhdl:5' bound to instance 'c_counter_binary_0' of component 'Lab9_design_1_c_counter_binary_0_0' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'Lab9_design_1_c_counter_binary_0_0' [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_c_counter_binary_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Lab9_design_1_clk_wiz_1' declared at 'C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_clk_wiz_1_stub.vhdl:5' bound to instance 'clk_wiz' of component 'Lab9_design_1_clk_wiz_1' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Lab9_design_1_clk_wiz_1' [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_clk_wiz_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Lab9_design_1_ila_0_0' declared at 'C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'Lab9_design_1_ila_0_0' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'Lab9_design_1_ila_0_0' [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_ila_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Lab9_design_1_vio_0_0' declared at 'C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_vio_0_0_stub.vhdl:5' bound to instance 'vio_0' of component 'Lab9_design_1_vio_0_0' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'Lab9_design_1_vio_0_0' [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/.Xil/Vivado-15200-DESKTOP-RN51NCC/realtime/Lab9_design_1_vio_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Lab9_design_1_xlslice_0_0' declared at 'c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_xlslice_0_0/synth/Lab9_design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'Lab9_design_1_xlslice_0_0' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:102]
+INFO: [Synth 8-6157] synthesizing module 'Lab9_design_1_xlslice_0_0' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_xlslice_0_0/synth/Lab9_design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (1#1) [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Lab9_design_1_xlslice_0_0' (2#1) [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_xlslice_0_0/synth/Lab9_design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_0'. This will prevent further optimization [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'Lab9_design_1' (3#1) [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/synth/Lab9_design_1.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'Lab9_design_1_wrapper' (4#1) [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/hdl/Lab9_design_1_wrapper.vhd:22]
+WARNING: [Synth 8-7129] Port Din[31] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[28] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[27] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1407.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1407.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1407.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_c_counter_binary_0_0/Lab9_design_1_c_counter_binary_0_0/Lab9_design_1_c_counter_binary_0_0_in_context.xdc] for cell 'Lab9_design_1_i/c_counter_binary_0'
+Finished Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_c_counter_binary_0_0/Lab9_design_1_c_counter_binary_0_0/Lab9_design_1_c_counter_binary_0_0_in_context.xdc] for cell 'Lab9_design_1_i/c_counter_binary_0'
+Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_ila_0_0/Lab9_design_1_ila_0_0/Lab9_design_1_ila_0_0_in_context.xdc] for cell 'Lab9_design_1_i/ila_0'
+Finished Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_ila_0_0/Lab9_design_1_ila_0_0/Lab9_design_1_ila_0_0_in_context.xdc] for cell 'Lab9_design_1_i/ila_0'
+Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_vio_0_0/Lab9_design_1_vio_0_0/Lab9_design_1_vio_0_0_in_context.xdc] for cell 'Lab9_design_1_i/vio_0'
+Finished Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_vio_0_0/Lab9_design_1_vio_0_0/Lab9_design_1_vio_0_0_in_context.xdc] for cell 'Lab9_design_1_i/vio_0'
+Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1_in_context.xdc] for cell 'Lab9_design_1_i/clk_wiz'
+Finished Parsing XDC File [c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1_in_context.xdc] for cell 'Lab9_design_1_i/clk_wiz'
+Parsing XDC File [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.srcs/constrs_1/new/zy10_const.xdc]
+Finished Parsing XDC File [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.srcs/constrs_1/new/zy10_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.srcs/constrs_1/new/zy10_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab9_design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lab9_design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1434.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.253 . Memory (MB): peak = 1434.887 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/ECE520/Lab9/Lab_9_design/Lab_9_design.gen/sources_1/bd/Lab9_design_1/ip/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1/Lab9_design_1_clk_wiz_1_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for Lab9_design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Lab9_design_1_i/c_counter_binary_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Lab9_design_1_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Lab9_design_1_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Lab9_design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Lab9_design_1_i/xlslice_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[31] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[28] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[27] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module Lab9_design_1_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:04 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:15 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:15 . Memory (MB): peak = 1434.887 ; gain = 27.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:01:15 . Memory (MB): peak = 1448.602 ; gain = 41.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |Lab9_design_1_c_counter_binary_0_0 |         1|
+|2     |Lab9_design_1_clk_wiz_1            |         1|
+|3     |Lab9_design_1_ila_0_0              |         1|
+|4     |Lab9_design_1_vio_0_0              |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |Lab9_design_1_c_counter_binary_0_0_bbox |     1|
+|2     |Lab9_design_1_clk_wiz_1_bbox            |     1|
+|3     |Lab9_design_1_ila_0_0_bbox              |     1|
+|4     |Lab9_design_1_vio_0_0_bbox              |     1|
+|5     |IBUF                                    |     1|
+|6     |OBUF                                    |     4|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1454.352 ; gain = 47.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 1454.352 ; gain = 19.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:25 . Memory (MB): peak = 1454.352 ; gain = 47.082
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1466.430 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 712c6162
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:02:00 . Memory (MB): peak = 1473.074 ; gain = 65.805
+INFO: [Common 17-1381] The checkpoint 'C:/ECE520/Lab9/Lab_9_design/Lab_9_design.runs/synth_1/Lab9_design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Lab9_design_1_wrapper_utilization_synth.rpt -pb Lab9_design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 22 19:09:36 2022...
