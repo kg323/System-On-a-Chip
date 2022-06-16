@@ -1,0 +1,5 @@
+uart_baud_gen.v,verilog,xil_defaultlib,../../../../wave_gen.gen/sources_1/ip/uart_tx_0/src/uart_baud_gen.v,
+uart_tx_ctl.v,verilog,xil_defaultlib,../../../../wave_gen.gen/sources_1/ip/uart_tx_0/src/uart_tx_ctl.v,
+uart_tx.v,verilog,xil_defaultlib,../../../../wave_gen.gen/sources_1/ip/uart_tx_0/src/uart_tx.v,
+uart_tx_0.v,verilog,xil_defaultlib,../../../../wave_gen.gen/sources_1/ip/uart_tx_0/sim/uart_tx_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

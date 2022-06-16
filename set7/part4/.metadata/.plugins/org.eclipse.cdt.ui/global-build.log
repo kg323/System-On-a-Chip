@@ -1,0 +1,39 @@
+Nothing to build in platform 'design_1_wrapper'
+
+19:57:22 **** Incremental Build of configuration Debug for project lab7_part4 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/ECE520/Lab7/Part4/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:4:
+C:/ECE520/Lab7/Part4/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/ECE520/Lab7/Part4/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:24:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'Xint8 *' {aka 'char *'} [-Wformat=]
+   24 |         scanf("%d",&usr_in);
+      |                ~^  ~~~~~~~
+      |                 |  |
+      |                 |  Xint8 * {aka char *}
+      |                 int *
+      |                %hhd
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lab7_part4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/ECE520/Lab7/Part4/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab7_part4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab7_part4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab7_part4.elf  |tee "lab7_part4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72511	   2550	  22640	  97701	  17da5	lab7_part4.elf
+'Finished building: lab7_part4.elf.size'
+' '

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Apr 14 21:02:25 2022
+# Process ID: 34108
+# Current directory: C:/ECE520/Lab7/Part3/Custom_AXI.runs/design_1_my_mult_ip_0_0_synth_1
+# Command line: vivado.exe -log design_1_my_mult_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_my_mult_ip_0_0.tcl
+# Log file: C:/ECE520/Lab7/Part3/Custom_AXI.runs/design_1_my_mult_ip_0_0_synth_1/design_1_my_mult_ip_0_0.vds
+# Journal file: C:/ECE520/Lab7/Part3/Custom_AXI.runs/design_1_my_mult_ip_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-RN51NCC, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 2, Host memory: 6328 MB
+#-----------------------------------------------------------
+source design_1_my_mult_ip_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1410.523 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE520/Lab7/ip_repo/my_mult_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1410.523 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_my_mult_ip_0_0, cache-ID = a4bccaea5b33ff73.
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 14 21:04:43 2022...

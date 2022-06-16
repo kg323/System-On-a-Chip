@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr  7 19:40:25 2022" VIVADOVERSION="2021.2">
+
+  <SYSTEMINFO ARCH="kintexu" BOARD="xilinx.com:kcu105:part0:1.7" DEVICE="xcku040" NAME="UART_LED_Subsystem" PACKAGE="ffva1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" LEFT="0" NAME="clk_pin_p" RIGHT="0" SIGIS="clk" SIGNAME="External_Ports_clk_pin_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_DS_P"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" LEFT="0" NAME="clk_pin_n" RIGHT="0" SIGIS="clk" SIGNAME="External_Ports_clk_pin_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_DS_N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="led_pins" RIGHT="0" SIGIS="undef" SIGNAME="led_ctl_0_led_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_ctl_0" PORT="led_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn_pin" SIGIS="undef" SIGNAME="External_Ports_btn_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="meta_harden_btn" PORT="signal_src"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst_pin" SIGIS="undef" SIGNAME="External_Ports_rst_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="meta_harden_rst" PORT="signal_src"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rxd_pin" SIGIS="undef" SIGNAME="External_Ports_rxd_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uart_rx_i0_meta_harden_0" PORT="signal_src"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="3" FULLNAME="/led_ctl_0" HWVERSION="1.0" INSTANCE="led_ctl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led_ctl" VLNV="xilinx.com:user:led_ctl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_led_ctl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_rx" SIGIS="undef" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_clk_rx" SIGIS="undef" SIGNAME="meta_harden_rst_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn_clk_rx" SIGIS="undef" SIGNAME="meta_harden_btn_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_btn" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="rx_data" RIGHT="0" SIGIS="undef" SIGNAME="uart_rx_i0_uart_rx_ctl_0_rx_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_rx_ctl_0" PORT="rx_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_data_rdy" SIGIS="undef" SIGNAME="uart_rx_i0_uart_rx_ctl_0_rx_data_rdy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_rx_ctl_0" PORT="rx_data_rdy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="led_o" RIGHT="0" SIGIS="undef" SIGNAME="led_ctl_0_led_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_pins"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/meta_harden_btn" HWVERSION="1.0" INSTANCE="meta_harden_btn" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="meta_harden" VLNV="xilinx.com:user:meta_harden:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_meta_harden_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_dst" SIGIS="undef" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_dst" SIGIS="undef" SIGNAME="meta_harden_rst_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="signal_src" SIGIS="undef" SIGNAME="External_Ports_btn_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="signal_dst" SIGIS="undef" SIGNAME="meta_harden_btn_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_ctl_0" PORT="btn_clk_rx"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/meta_harden_rst" HWVERSION="1.0" INSTANCE="meta_harden_rst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="meta_harden" VLNV="xilinx.com:user:meta_harden:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_meta_harden_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_dst" SIGIS="undef" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_dst" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="signal_src" SIGIS="undef" SIGNAME="External_Ports_rst_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="signal_dst" SIGIS="undef" SIGNAME="meta_harden_rst_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_btn" PORT="rst_dst"/>
+            <CONNECTION INSTANCE="led_ctl_0" PORT="rst_clk_rx"/>
+            <CONNECTION INSTANCE="uart_rx_i0_meta_harden_0" PORT="rst_dst"/>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_rx_ctl_0" PORT="rst_clk_rx"/>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_baud_gen_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/uart_rx_i0/meta_harden_0" HWVERSION="1.0" INSTANCE="uart_rx_i0_meta_harden_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="meta_harden" VLNV="xilinx.com:user:meta_harden:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_meta_harden_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_dst" SIGIS="undef" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_dst" SIGIS="undef" SIGNAME="meta_harden_rst_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="signal_src" SIGIS="undef" SIGNAME="External_Ports_rxd_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rxd_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="signal_dst" SIGIS="undef" SIGNAME="uart_rx_i0_meta_harden_0_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_rx_ctl_0" PORT="rxd_clk_rx"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/uart_rx_i0/uart_baud_gen_0" HWVERSION="1.0" INSTANCE="uart_rx_i0_uart_baud_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uart_baud_gen" VLNV="xilinx.com:user:uart_baud_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BAUD_RATE" VALUE="57600"/>
+        <PARAMETER NAME="CLOCK_RATE" VALUE="50000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_uart_baud_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="meta_harden_rst_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="baud_x16_en" SIGIS="undef" SIGNAME="uart_rx_i0_uart_baud_gen_0_baud_x16_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_rx_ctl_0" PORT="baud_x16_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/uart_rx_i0/uart_rx_ctl_0" HWVERSION="1.0" INSTANCE="uart_rx_i0_uart_rx_ctl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uart_rx_ctl" VLNV="xilinx.com:user:uart_rx_ctl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_uart_rx_ctl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_rx" SIGIS="undef" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_ds_buf_0" PORT="IBUF_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_clk_rx" SIGIS="undef" SIGNAME="meta_harden_rst_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="baud_x16_en" SIGIS="undef" SIGNAME="uart_rx_i0_uart_baud_gen_0_baud_x16_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_baud_gen_0" PORT="baud_x16_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rxd_clk_rx" SIGIS="undef" SIGNAME="uart_rx_i0_meta_harden_0_signal_dst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_rx_i0_meta_harden_0" PORT="signal_dst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rx_data" RIGHT="0" SIGIS="undef" SIGNAME="uart_rx_i0_uart_rx_ctl_0_rx_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_ctl_0" PORT="rx_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rx_data_rdy" SIGIS="undef" SIGNAME="uart_rx_i0_uart_rx_ctl_0_rx_data_rdy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_ctl_0" PORT="rx_data_rdy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="frm_err" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="27" FULLNAME="/util_ds_buf_0" HWVERSION="2.2" INSTANCE="util_ds_buf_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_ds_buf" VLNV="xilinx.com:ip:util_ds_buf:2.2">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_BUF_TYPE" VALUE="IBUFDS"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="C_BUFGCE_DIV" VALUE="1"/>
+        <PARAMETER NAME="C_BUFG_GT_SYNC" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_DEVICE" VALUE="VERSAL_AI_CORE_ES1"/>
+        <PARAMETER NAME="C_OBUFDS_GTE5_ADV" VALUE="&quot;00&quot;"/>
+        <PARAMETER NAME="C_REFCLK_ICNTL_TX" VALUE="&quot;00000&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_util_ds_buf_0_0"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="BOARD_PARAMETER"/>
+        <PARAMETER NAME="FREQ_HZ" VALUE="156250000"/>
+        <PARAMETER NAME="DIFF_CLK_IN_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" LEFT="0" NAME="IBUF_DS_P" RIGHT="0" SIGIS="clk" SIGNAME="External_Ports_clk_pin_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_pin_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" LEFT="0" NAME="IBUF_DS_N" RIGHT="0" SIGIS="clk" SIGNAME="External_Ports_clk_pin_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_pin_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" LEFT="0" NAME="IBUF_OUT" RIGHT="0" SIGIS="clk" SIGNAME="util_ds_buf_0_IBUF_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_ctl_0" PORT="clk_rx"/>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="clk_dst"/>
+            <CONNECTION INSTANCE="meta_harden_btn" PORT="clk_dst"/>
+            <CONNECTION INSTANCE="uart_rx_i0_meta_harden_0" PORT="clk_dst"/>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_rx_ctl_0" PORT="clk_rx"/>
+            <CONNECTION INSTANCE="uart_rx_i0_uart_baud_gen_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="CLK_IN_D" TYPE="TARGET" VLNV="xilinx.com:interface:diff_clock:1.0">
+          <PARAMETER NAME="CAN_DEBUG" VALUE="false"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="CLK_P" PHYSICAL="IBUF_DS_P"/>
+            <PORTMAP LOGICAL="CLK_N" PHYSICAL="IBUF_DS_N"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="UART_LED_Subsystem_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="meta_harden_rst" PORT="rst_dst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

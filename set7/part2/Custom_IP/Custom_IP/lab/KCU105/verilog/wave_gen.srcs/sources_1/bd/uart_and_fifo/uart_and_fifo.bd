@@ -1,0 +1,128 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x74BE8D90D8B86537",
+      "device": "xcku035-fbva900-2-e",
+      "gen_directory": "../../../../wave_gen.gen/sources_1/bd/uart_and_fifo",
+      "name": "uart_and_fifo",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2"
+    },
+    "design_tree": {
+      "uart_tx_0": "",
+      "fifo_generator_0": ""
+    },
+    "interface_ports": {
+      "FIFO_WRITE_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:fifo_write:1.0",
+        "vlnv": "xilinx.com:interface:fifo_write_rtl:1.0"
+      }
+    },
+    "ports": {
+      "rst_clk_tx_0": {
+        "direction": "I"
+      },
+      "clk_tx_0": {
+        "direction": "I"
+      },
+      "txd_tx_0": {
+        "direction": "O"
+      },
+      "srst_0": {
+        "direction": "I"
+      },
+      "wr_clk_0": {
+        "type": "clk",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "uart_tx_0": {
+        "vlnv": "xilinxtrng.com:ip:uart_tx:1.0",
+        "xci_name": "uart_and_fifo_uart_tx_0_0",
+        "xci_path": "ip\\uart_and_fifo_uart_tx_0_0\\uart_and_fifo_uart_tx_0_0.xci",
+        "inst_hier_path": "uart_tx_0",
+        "parameters": {
+          "BAUD_RATE": {
+            "value": "115200"
+          },
+          "CLOCK_RATE": {
+            "value": "166667000"
+          }
+        }
+      },
+      "fifo_generator_0": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "uart_and_fifo_fifo_generator_0_0",
+        "xci_path": "ip\\uart_and_fifo_fifo_generator_0_0\\uart_and_fifo_fifo_generator_0_0.xci",
+        "inst_hier_path": "fifo_generator_0",
+        "parameters": {
+          "Fifo_Implementation": {
+            "value": "Independent_Clocks_Builtin_FIFO"
+          },
+          "Input_Data_Width": {
+            "value": "8"
+          },
+          "Performance_Options": {
+            "value": "First_Word_Fall_Through"
+          },
+          "Read_Clock_Frequency": {
+            "value": "166"
+          },
+          "Write_Clock_Frequency": {
+            "value": "200"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "FIFO_WRITE_0_1": {
+        "interface_ports": [
+          "FIFO_WRITE_0",
+          "fifo_generator_0/FIFO_WRITE"
+        ]
+      },
+      "uart_tx_0_uart_fifo_if": {
+        "interface_ports": [
+          "uart_tx_0/uart_fifo_if",
+          "fifo_generator_0/FIFO_READ"
+        ]
+      }
+    },
+    "nets": {
+      "clk_tx_0_1": {
+        "ports": [
+          "clk_tx_0",
+          "uart_tx_0/clk_tx",
+          "fifo_generator_0/rd_clk"
+        ]
+      },
+      "rst_clk_tx_0_1": {
+        "ports": [
+          "rst_clk_tx_0",
+          "uart_tx_0/rst_clk_tx"
+        ]
+      },
+      "srst_0_1": {
+        "ports": [
+          "srst_0",
+          "fifo_generator_0/srst"
+        ]
+      },
+      "uart_tx_0_txd_tx": {
+        "ports": [
+          "uart_tx_0/txd_tx",
+          "txd_tx_0"
+        ]
+      },
+      "wr_clk_0_1": {
+        "ports": [
+          "wr_clk_0",
+          "fifo_generator_0/wr_clk"
+        ]
+      }
+    }
+  }
+}

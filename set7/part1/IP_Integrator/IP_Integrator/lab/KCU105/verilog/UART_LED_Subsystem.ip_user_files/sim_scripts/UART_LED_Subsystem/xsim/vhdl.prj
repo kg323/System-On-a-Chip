@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/UART_LED_Subsystem/ip/UART_LED_Subsystem_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../bd/UART_LED_Subsystem/ip/UART_LED_Subsystem_util_ds_buf_0_0/sim/UART_LED_Subsystem_util_ds_buf_0_0.vhd" \
+
+nosort

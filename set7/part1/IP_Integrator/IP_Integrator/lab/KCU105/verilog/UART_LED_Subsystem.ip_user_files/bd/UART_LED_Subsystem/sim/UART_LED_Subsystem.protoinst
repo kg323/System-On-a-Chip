@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"UART_LED_Subsystem": {
+			"proto_instances": {
+			}
+		}
+	}
+}
