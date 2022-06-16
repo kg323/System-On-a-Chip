@@ -1,0 +1,26 @@
+{
+  "sampleCount": 12,
+  "entries": [
+    {
+      "addr": 4294967092,
+      "line": 0,
+      "count": 12,
+      "total": 12.0,
+      "callerMap": {
+        "4294967084": 12.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 4294967084,
+      "line": 0,
+      "count": 0,
+      "total": 12.001101,
+      "callerMap": {},
+      "calleeMap": {
+        "4294967092": 12.001101
+      }
+    }
+  ],
+  "stackTrace": true
+}

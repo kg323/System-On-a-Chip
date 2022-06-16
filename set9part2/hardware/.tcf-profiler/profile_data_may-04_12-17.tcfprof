@@ -1,0 +1,30 @@
+{
+  "sampleCount": 293,
+  "entries": [
+    {
+      "addr": 1053716,
+      "name": "__libc_fini_array",
+      "line": 0,
+      "count": 0,
+      "total": 293.0293,
+      "callerMap": {},
+      "calleeMap": {
+        "1055816": 293.0293
+      }
+    },
+    {
+      "addr": 1055816,
+      "name": "_exit",
+      "fileFull": "C:\\ECE520\\Lab9\\Part_2\\Lab9_design_1_wrapper\\ps7_cortexa9_0\\standalone_ps7_cortexa9_0\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v7_6\\src/_exit.c",
+      "fileBase": "_exit.c",
+      "line": 16,
+      "count": 293,
+      "total": 293.0,
+      "callerMap": {
+        "1053716": 293.0
+      },
+      "calleeMap": {}
+    }
+  ],
+  "stackTrace": true
+}

@@ -1,0 +1,44 @@
+timestamp=[2022-04-22 22:24:39], mode=WORKBENCH_START, duration=0:01:07.064, duration_ms=67064, data={}
+timestamp=[2022-04-22 22:24:49], mode=WORKBENCH_UI_INIT, duration=0:00:09.293, duration_ms=9293, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2022-04-22 22:24:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.330, duration_ms=1330, data={}
+timestamp=[2022-04-22 22:32:38], mode=APP_CREATION, duration=0:01:23.561, duration_ms=83561, data={name=fir_app, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Lab9_design_1_wrapper, application_type=application}
+timestamp=[2022-04-24 21:14:13], mode=PLATFORM_GENERATION, duration=0:04:59.390, duration_ms=299390, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-04-24 21:14:27], mode=BUILD, duration=0:00:05.015, duration_ms=5015, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-04-24 21:42:07], mode=PLATFORM_GENERATION, duration=0:02:56.303, duration_ms=176303, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-04-24 21:42:22], mode=BUILD, duration=0:00:09.681, duration_ms=9681, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 12:21:27], mode=BUILD, duration=0:00:06.997, duration_ms=6997, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 12:21:36], mode=BUILD, duration=0:00:08.632, duration_ms=8632, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 12:32:17], mode=PLATFORM_GENERATION, duration=0:01:49.190, duration_ms=109190, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 12:33:58], mode=BUILD, duration=0:00:00.754, duration_ms=754, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 12:34:04], mode=BUILD, duration=0:00:04.242, duration_ms=4242, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 12:53:14], mode=BUILD, duration=0:00:00.713, duration_ms=713, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 12:53:21], mode=BUILD, duration=0:00:07.011, duration_ms=7011, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 12:54:23], mode=PLATFORM_GENERATION, duration=0:00:56.688, duration_ms=56688, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 12:54:26], mode=BUILD, duration=0:00:03.410, duration_ms=3410, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 12:56:33], mode=PLATFORM_GENERATION, duration=0:02:01.171, duration_ms=121171, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 12:56:41], mode=BUILD, duration=0:00:07.185, duration_ms=7185, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:12:26], mode=PLATFORM_GENERATION, duration=0:01:21.489, duration_ms=81489, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:12:32], mode=BUILD, duration=0:00:05.959, duration_ms=5959, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:16:24], mode=PLATFORM_GENERATION, duration=0:03:40.151, duration_ms=220151, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:16:29], mode=BUILD, duration=0:00:05.080, duration_ms=5080, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:16:38], mode=BUILD, duration=0:00:06.315, duration_ms=6315, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:22:27], mode=BUILD, duration=0:00:01.160, duration_ms=1160, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:24:56], mode=PLATFORM_GENERATION, duration=0:00:25.752, duration_ms=25752, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:24:57], mode=BUILD, duration=0:00:01.339, duration_ms=1339, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:27:57], mode=PLATFORM_GENERATION, duration=0:02:11.992, duration_ms=131992, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:28:08], mode=BUILD, duration=0:00:10.682, duration_ms=10682, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:29:22], mode=BUILD, duration=0:00:00.900, duration_ms=900, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:29:26], mode=BUILD, duration=0:00:03.925, duration_ms=3925, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:33:05], mode=BUILD, duration=0:00:03.541, duration_ms=3541, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:34:34], mode=BUILD, duration=0:00:01.143, duration_ms=1143, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:35:49], mode=BUILD, duration=0:00:01.110, duration_ms=1110, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:36:05], mode=BUILD, duration=0:00:15.479, duration_ms=15479, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:37:18], mode=PLATFORM_GENERATION, duration=0:00:28.269, duration_ms=28269, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:37:19], mode=BUILD, duration=0:00:01.080, duration_ms=1080, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:39:50], mode=PLATFORM_GENERATION, duration=0:02:18.840, duration_ms=138840, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:39:57], mode=BUILD, duration=0:00:06.685, duration_ms=6685, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:41:18], mode=BUILD, duration=0:00:04.031, duration_ms=4031, data={name=fir_app, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 18:42:11], mode=PLATFORM_GENERATION, duration=0:00:33.828, duration_ms=33828, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:42:12], mode=BUILD, duration=0:00:01.050, duration_ms=1050, data={name=fir_app, configuration=Debug, clean_build=true}
+timestamp=[2022-05-04 18:44:18], mode=PLATFORM_GENERATION, duration=0:01:57.043, duration_ms=117043, data={name=Lab9_design_1_wrapper}
+timestamp=[2022-05-04 18:44:25], mode=BUILD, duration=0:00:05.998, duration_ms=5998, data={name=fir_app, configuration=Debug, clean_build=false}
